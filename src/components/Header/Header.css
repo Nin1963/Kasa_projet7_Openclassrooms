@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-banner {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+.home-icon {
+    position: relative;
+}
+.home-icon img {
+    height: 40px;
+}
+.door {
+    position: absolute;
+    top: 22px;
+    right: 7px;
+}
+.door img {
+    height: 15px;
+}
+.k img {
+    height: 60px;
+}
+.s img {
+    height: 40px;
+}
+.a img {
+    height: 40px;
+}
+
+.link {
+display: flex;
+    gap: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #ff6060;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+.link a {
+    font-size: 20px;
+    }
+}

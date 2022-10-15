@@ -1,0 +1,16 @@
+.banner-home {
+  position: relative;
+}
+.name-home {
+  position: absolute;
+  top: 39%;
+  left: 20%;
+  color: white;
+  font-weight: 500;
+  font-size: 4vw;
+  margin: 0px;
+}
+.img-banner {
+  border-radius: 10px;
+  width: 100%;
+}
