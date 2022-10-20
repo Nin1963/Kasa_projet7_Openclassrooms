@@ -1,5 +1,6 @@
 .banner-home {
   position: relative;
+  
 }
 .name-home {
   position: absolute;
@@ -13,4 +14,45 @@
 .img-banner {
   border-radius: 10px;
   width: 100%;
+}
+
+.img-banner-mobile {
+  display: none;
+}
+
+.product-section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-home {
+    background-color: black;
+    border-radius: 10px;
+    mix-blend-mode: darken;
+  }
+
+  .banner-home img {
+    
+    
+    width: 100%;
+  }
+
+  .img-banner {
+    display: none;
+  }
+
+  .img-banner-mobile {
+    display: inline;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .name-home {
+    /* font-weight: 600; */
+    /* font-size: 8vw; */
+    top: 25%;
+left: 4%;
+font-size: 6vw;
+  }
 }

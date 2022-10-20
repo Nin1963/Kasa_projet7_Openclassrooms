@@ -6,14 +6,15 @@
     background-color: #f6f6f6;
     padding-top: 36px;
     border-radius: 20px;
-    gap: 20px;
+    gap: 50px;
     margin-top: 40px;
+    padding-bottom: 36px;
   }
   .card {
     position: relative;
   }
   .card img {
-    width: 340px;
+    width: 400px;
     height: 340px;
     border-radius: 8px;
   }
@@ -25,4 +26,10 @@
     left: 10px;
     color: white;
     max-width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card img {
+      width: 330px;
+    }
   }
