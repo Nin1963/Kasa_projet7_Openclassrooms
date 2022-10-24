@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerAbout from '../../assets/img/bannerAbout.png';
+import bannerAboutMobile from '../../assets/img/bannerAbout-mobile.png'
 import Collapse from '../../components/Collapse/Collapse';
 
 function About() {
@@ -7,6 +8,7 @@ function About() {
     <div className="about-container product-section">
       <div className="banner banner-home">
         <img className="img-banner" src={bannerAbout} alt="Paysage" />
+        <img className="img-banner-mobile" src={bannerAboutMobile} alt="Paysage" />
       </div>
       <div className="about-section">
         <Collapse 

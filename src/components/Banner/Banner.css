@@ -1,6 +1,8 @@
 .banner-home {
   position: relative;
-  
+  /* background-image: url(../../assets/img/Background.png); */
+  /* border-radius: 10px;
+    mix-blend-mode: darken; */
 }
 .name-home {
   position: absolute;
@@ -8,12 +10,13 @@
   left: 20%;
   color: white;
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 48px;
   margin: 0px;
 }
 .img-banner {
   border-radius: 10px;
   width: 100%;
+  
 }
 
 .img-banner-mobile {
@@ -26,15 +29,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .banner-home {
-    background-color: black;
-    border-radius: 10px;
-    mix-blend-mode: darken;
-  }
-
   .banner-home img {
-    
-    
     width: 100%;
   }
 
@@ -52,7 +47,8 @@
     /* font-weight: 600; */
     /* font-size: 8vw; */
     top: 25%;
-left: 4%;
-font-size: 6vw;
+    left: 13%;
+    font-size: 24px;
+    font-weight: 500;
   }
 }

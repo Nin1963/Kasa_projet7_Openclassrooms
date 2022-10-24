@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import data from "../../assets/data/data.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Slider from "../../components/Slider/Slider";
@@ -9,13 +10,18 @@ import "./Housing.css";
 import "../../components/Collapse/Collapse.css";
 
 function Housing() {
-  const url = window.location.href;
-  const id = url.substring(url.lastIndexOf("=") + 1);
-  const product = data.find((item) => item.id === id);
-
+  // const url = window.location.href;
+  // const id = url.substring(url.lastIndexOf("=") + 1);
+  
+ 
+  const { id } = useParams();
+  let product = {};
+  console.log(id);
+   product = data.find((item) => item.id === id);
+   console.log(Object.keys(product).length);
   const { title, location, host, rating, description, equipments } = product;
 
-  if (product) {
+  if (Object.keys(product).length !== 0) {
     return (
       <div className="product-section">
         <Slider product={product} />
@@ -41,8 +47,11 @@ function Housing() {
         </div>
       </div>
     );
-  } else {
-    return <Error />;
+  } else if (product === null){
+    
+    return <Error />
+    
+    
   }
 }
 

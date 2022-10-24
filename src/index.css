@@ -24,7 +24,15 @@ code {
   #root {
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+
+  header {
+    padding: 3%;
+  }
+
+  .error-container {
+    margin-top: 50%;
   }
 }
 

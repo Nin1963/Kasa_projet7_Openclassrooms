@@ -29,7 +29,13 @@
   }
 
   @media screen and (max-width: 768px) {
+    .card-section {
+      background: none;
+      width: 100%;
+      align-items: center;
+    }
+
     .card img {
-      width: 330px;
+      width: 100%;
     }
   }
