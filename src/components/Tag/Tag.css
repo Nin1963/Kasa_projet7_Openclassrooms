@@ -2,17 +2,23 @@
     display: flex;
     gap: 10px;
   }
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tag-star-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
   .tag {
-    background-color: #ff6060;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 10px;
   }
-  
-  .tag-star-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}

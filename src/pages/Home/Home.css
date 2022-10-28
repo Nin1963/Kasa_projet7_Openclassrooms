@@ -1,13 +1,10 @@
 .banner-home {
   position: relative;
-  /* background-image: url(../../assets/img/Background.png); */
-  /* border-radius: 10px;
-    mix-blend-mode: darken; */
 }
 .name-home {
   position: absolute;
   top: 39%;
-  left: 20%;
+  left: 25%;
   color: white;
   font-weight: 500;
   font-size: 48px;
@@ -16,36 +13,31 @@
 .img-banner {
   border-radius: 10px;
   width: 100%;
-  
 }
-
 .img-banner-mobile {
   display: none;
 }
-
 .product-section {
   max-width: 1440px;
   margin: auto;
 }
 
 @media screen and (max-width: 768px) {
+  .product-section {
+    width: 90%;
+  }
   .banner-home img {
     width: 100%;
   }
-
   .img-banner {
     display: none;
   }
-
   .img-banner-mobile {
     display: inline;
     border-radius: 10px;
     width: 100%;
   }
-
   .name-home {
-    /* font-weight: 600; */
-    /* font-size: 8vw; */
     top: 25%;
     left: 13%;
     font-size: 24px;

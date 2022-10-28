@@ -9,33 +9,32 @@
     gap: 50px;
     margin-top: 40px;
     padding-bottom: 36px;
-  }
-  .card {
-    position: relative;
+}
+.card {
+  position: relative;
+}
+.card img {
+  width: 400px;
+  height: 340px;
+  border-radius: 8px;
+}
+.card-content {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-section {
+    background: none;
+    width: 100%;
+    align-items: center;
   }
   .card img {
-    width: 400px;
-    height: 340px;
-    border-radius: 8px;
+    width: 100%;
   }
-  .card-content {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 500;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    max-width: 300px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .card-section {
-      background: none;
-      width: 100%;
-      align-items: center;
-    }
-
-    .card img {
-      width: 100%;
-    }
-  }
+}

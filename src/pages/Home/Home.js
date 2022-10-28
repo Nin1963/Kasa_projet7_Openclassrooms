@@ -1,6 +1,6 @@
 import bannerHome from '../../assets/img/banner.png'
 import bannerMobile from '../../assets/img/banner-mobile.png'
-import '../../components/Banner/Banner.css'
+import '../Home/Home.css'
 import Card from '../../components/Card/Card'
 import '../../components/Card/Card.css'
 

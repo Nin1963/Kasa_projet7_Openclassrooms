@@ -10,48 +10,40 @@ import "./Housing.css";
 import "../../components/Collapse/Collapse.css";
 
 function Housing() {
-  // const url = window.location.href;
-  // const id = url.substring(url.lastIndexOf("=") + 1);
-  
- 
   const { id } = useParams();
   let product = {};
-  console.log(id);
-   product = data.find((item) => item.id === id);
-   console.log(Object.keys(product).length);
-  const { title, location, host, rating, description, equipments } = product;
+  product = data.find((item) => item.id === id);
 
-  if (Object.keys(product).length !== 0) {
+  if (product) {
     return (
       <div className="product-section">
         <Slider product={product} />
         <div className="info-container">
           <div className="title-tag-container">
             <div className="title-location">
-              <h1 className="product-title">{title}</h1>
-              <p className="product-location">{location}</p>
+              <h1 className="product-title">{product.title}</h1>
+              <p className="product-location">{product.location}</p>
             </div>
             <Tag tag={product.tags} />
           </div>
           <div className="name-star-container">
             <div className="name-img">
-              <p>{host.name}</p>
-              <img src={host.picture} alt={host.name} />
+              <p>{product.host.name}</p>
+              <img src={product.host.picture} alt={product.host.name} />
             </div>
-            <Rating rating={rating} />
+            <div>
+              <Rating rating={product.rating} />
+            </div>
           </div>
         </div>
         <div className="housing-info">
-          <Collapse title=" Description" content={description} />
-          <Collapse title=" Équipements" content={equipments} />
+          <Collapse title=" Description" content={product.description} />
+          <Collapse title=" Équipements" content={product.equipments} />
         </div>
       </div>
     );
-  } else if (product === null){
-    
+  } else {
     return <Error />
-    
-    
   }
 }
 

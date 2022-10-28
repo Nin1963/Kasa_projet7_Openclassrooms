@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Collapse.css";
-import arrowDown from "../../assets/icons/arrow_down.svg";
+import arrowDown from "../../assets/img/arrow_down.svg";
 
 function Collapse({ title, content, text }) {
   const [isOpen, setIsOpen] = useState(true);

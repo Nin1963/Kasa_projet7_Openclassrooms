@@ -3,13 +3,13 @@ import data from '../../assets/data/data.json';
 import { Link } from 'react-router-dom';
 
 function Card() {
-  return data.map((item) => (
-    <div className="card" key={item.id}>
-      <Link to={'./housing/' + item.id}>
-        <img id={item.id} src={item.cover} alt={item.title} />
+  return data.map((product) => (
+    <div className="card" key={product.id}>
+      <Link to={'./housing/' + product.id }>
+        <img id={product.id} src={product.cover} alt={product.title} />
       </Link>
       <div className="card-content">
-        <h3>{item.title}</h3>
+        <h3>{product.title}</h3>
       </div>
     </div>
   ));

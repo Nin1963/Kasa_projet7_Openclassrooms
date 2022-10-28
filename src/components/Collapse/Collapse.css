@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* font-size: 18px; */
   padding: 10px;
   border-radius: 10px;
 }
@@ -23,74 +22,68 @@
   justify-content: space-between;
 }
 .collapse {
-  
   flex-basis: 45%;
 }
-  /* .collapse-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-  } */
-  .collapse-title h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .arrow-collapse {
-    cursor: pointer;
-  }
-  
-  .rotate {
-    transform: rotate(180deg);
-  }
-  
-  .collapse-content-open {
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
-    background-color: #f2f2f2;
-    color: #ff6060;
-    list-style: none;
-    font-weight: 500;
-  }
-  .equipments ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-  }
-  .equipments li {
-    margin-bottom: 3px;
-  }
- 
+.collapse-title h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.arrow-collapse {
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.collapse-content-open {
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  background-color: #f2f2f2;
+  color: #ff6060;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.equipments ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.equipments li {
+  margin-bottom: 3px;
+}
 .housing-info{
   display: flex;
   justify-content: space-between;
 }
-
 .housing-info-details {
     width: 45%;
     margin-bottom: 0;
 }
-
 .housing-info-title, .housing-info-text {
     font-size: 18px;
     border-radius: 10px;
 }
-
 .housing-info-title {
     padding-top: 2%;
     padding-bottom: 2%;
 }
-
 .housing-info-text {
     padding-top: 6%;
     padding-bottom: 5%;
 }
 
 @media screen and (max-width: 768px) {
-  .info-container {
+  .info-container, .housing-info {
       flex-direction: column;
+  }
+  .collapse-title {
+    font-size: 13px;
+  }
+  .arrow-collapse {
+    width: 5%;
+  }
+  .collapse-content-open {
+    font-size: 12px;
   }
 }
