@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Collapse.css";
 import arrowDown from "../../assets/img/arrow_down.svg";
 
-function Collapse({ title, content, text }) {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(true);
 
   return isOpen ? (
