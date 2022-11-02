@@ -10,6 +10,7 @@ import "./Housing.css";
 import "../../components/Collapse/Collapse.css";
 
 function Housing() {
+  // récupération de l'id du produit
   const { id } = useParams();
   let product = {};
   product = data.find((item) => item.id === id);

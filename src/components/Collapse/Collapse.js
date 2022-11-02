@@ -29,6 +29,7 @@ function Collapse({ title, content }) {
           onClick={() => setIsOpen(true)}
         />
       </div>
+      {/* Collapse pour la page Housing */}
       {typeof content === "object" ? (
         <ul className={"collapse-content-open"}>
           {content.map((item) => {
@@ -36,6 +37,7 @@ function Collapse({ title, content }) {
           })}
         </ul>
       ) : (
+        // Collapse pour la page About
         <p className="collapse-content-open">{content}</p>
       )}
     </div>

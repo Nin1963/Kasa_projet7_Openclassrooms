@@ -23,9 +23,9 @@ function Slider(product) {
       }
     }
   }
-
+  if (product.pictures.length !== 1) {
   return (
-    <div className="slider">
+     <div className="slider">
       <img
         className="img-slider"
         src={product?.pictures[index]}
@@ -47,7 +47,18 @@ function Slider(product) {
         {index + 1}/{product.pictures.length}
       </span>
     </div>
-  );
+  )
+} else {
+  return(
+    <div className="slider">
+        <img
+          className="img-slider"
+          src={product?.pictures[index]}
+          alt={product?.title}
+        />
+    </div>
+  )
+}
 };
 
 export default Slider;
